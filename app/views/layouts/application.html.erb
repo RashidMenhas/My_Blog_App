@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>MyBlogApp</title>
+    <title><%= yield(:title) %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -11,6 +11,10 @@
   </head>
 
   <body>
+  <div class="nav-bar">
+      <%= link_to 'HOME', root_path, class: 'mr-8' %>
+      <%= link_to 'BACK', 'javascript:history.back()' %>
+    </div>
     <%= yield %>
   </body>
 </html>
