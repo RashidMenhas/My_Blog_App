@@ -30,7 +30,7 @@ class PostsController < ApplicationController
     return unless @post.save
 
     redirect_to posts_new_path
-    flash[:success] = 'Successfully Save'
+    flash[:success] = 'Successfully Save...'
   end
 
   def new
