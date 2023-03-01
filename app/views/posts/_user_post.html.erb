@@ -4,7 +4,16 @@
     <aside class="counter-section">
       <span>Comments: <%= post.comments_counter %></span>
       <span>Likes: <%= post.likes_counter %></span>
-    <aside>
-  </div>
-  <p><%= post.text %></p>
-</div>
+      <aside>
+      </div>
+      <div class = "post-like-section">
+        <%= post.text %>
+        <%= form_with model: @like, url: like_path, method: :post do |f|%>
+        <br/>
+        <div class= "container">
+          <%= f.submit "Like", class: "btn btn-outline-success"%>
+          </div>
+          <br/>
+        <%end%>
+      </div>
+    </div>
