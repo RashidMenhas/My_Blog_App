@@ -28,6 +28,9 @@ a {
   flex-direction: row;
   justify-content: space-between;
   margin: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 .users-container {
@@ -45,8 +48,8 @@ a {
 }
 
 .profile-image {
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
 }
 
@@ -126,4 +129,8 @@ a {
 .post-comments {
   margin: 20px;
   border: 1px solid black;
+}
+
+.create-heading {
+  margin-top: 10px;
 }
