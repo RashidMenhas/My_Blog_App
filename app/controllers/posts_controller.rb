@@ -7,6 +7,7 @@ class PostsController < ApplicationController
     @user = User.find(params[:user_id])
     @post = Post.find(params[:id])
     @comments = @post.comments.includes([:author])
+
     @like = Like.new
   end
 
