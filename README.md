@@ -59,9 +59,9 @@ After you're finished please remove all the comments and instructions!
 <!-- PROJECT DESCRIPTION -->
 
 
-# 📖 Ruby Capstone project <a name="about-project"></a>
+# 📖 My Blog App <a name="about-project"></a>
 
-> Hello Rails is my first rails project.
+> Create a blog app.
 
 ## 🛠 Built With <a name="built-with"></a>
 
