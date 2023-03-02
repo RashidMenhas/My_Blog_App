@@ -94,12 +94,6 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
-- I used Rails migration to build the schema.
-- This is Rails based project.
-
-
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
@@ -176,12 +170,6 @@ You can deploy this project using:
 <!-- FUTURE FEATURES -->
 
 ## 🔭 Future Features <a name="future-features"></a>
-
-> Describe 1 - 3 features you will add to the project.
-
-[] - Connect to the Database.
-[] - Add basic UI.
- 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
