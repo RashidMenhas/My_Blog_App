@@ -25,6 +25,11 @@ RSpec.describe 'User show', type: :feature do
     image = page.all('img')
     expect(image.size).to eq 1
   end
+  it 'Check the first three post' do
+    expect(page).not_to have_content(@post3.text)
+    expect(page).not_to have_content(@post2.text)
+    expect(page).not_to have_content(@post1.text)
+  end
   it 'Shows number of posts Author has written' do
     expect(page.body).to include('Number of posts: 4')
   end
@@ -38,10 +43,5 @@ RSpec.describe 'User show', type: :feature do
   it 'redirects to show all user posts when the See all posts button is clicked' do
     click_link 'See all posts'
     expect(current_path).to match user_posts_path(@author)
-  end
-  it 'Check the first three post' do
-    expect(page).not_to have_content(@post1.text)
-    expect(page).not_to have_content(@post2.text)
-    expect(page).not_to have_content(@post3.text)
   end
 end
