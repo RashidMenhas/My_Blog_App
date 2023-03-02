@@ -167,7 +167,11 @@ You can deploy this project using:
 - Twitter: [![Rashid Menhas](https://img.shields.io/badge/-RashidMenhas-blue?logo=Twitter&logoColor=skyBlue&style=plastic)](https://twitter.com/RashidM83664789)
 - LinkedIn: [![Rashid Menhas](https://img.shields.io/badge/-RashidMenhas-white?logo=LinkedIn&logoColor=181717&style=plastic)](https://www.linkedin.com/in/rashid-menhas/)
 
+👤 **Ayodeji Abidemi**
 
+- GitHub: [![demix007](https://img.shields.io/badge/-demix007-white?logo=GitHub&logoColor=181717&style=plastic)](https://github.com/demix007)
+- Twitter: [![dat_dope_demix](https://img.shields.io/badge/-dat_dope_demix-blue?logo=Twitter&logoColor=skyBlue&style=plastic)](https://twitter.com/dat_dope_demix)
+- LinkedIn: [![ayodeji-abidemi](https://img.shields.io/badge/-AyodejiAbidemi-white?logo=LinkedIn&logoColor=181717&style=plastic)](https://linkedin.com/in/ayodeji-abidemi)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
