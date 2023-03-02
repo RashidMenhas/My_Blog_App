@@ -25,7 +25,7 @@ RSpec.describe 'User show', type: :feature do
     image = page.all('img')
     expect(image.size).to eq 1
   end
-  it 'Check the first three post' do
+  it 'Check the first three post test' do
     expect(page).not_to have_content(@post3.text)
     expect(page).not_to have_content(@post2.text)
     expect(page).not_to have_content(@post1.text)
