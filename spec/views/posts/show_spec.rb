@@ -22,7 +22,7 @@ RSpec.describe 'Post Show', type: :feature do
     expect(page.body).to include('Comments: 3')
   end
 
-  it 'Shows the author' do 
+  it 'Shows the author' do
     expect(page).to have_content(@author.name)
   end
 
