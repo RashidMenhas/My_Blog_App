@@ -15,13 +15,19 @@ RSpec.describe 'User show', type: :feature do
                          text: 'Do more practice if your want to success in your life.')
     visit user_path(@author)
   end
-  it 'Shows Athor name' do
+  it 'Shows Author name' do
     expect(page).to have_content(@author.name)
   end
   it 'Shows Author biography' do
     expect(page.body).to have_content(@author.bio)
   end
 
+  it 'posts does not have content of likes' do
+    expect(page).not_to have_content(@post4.likes)
+    expect(page).not_to have_content(@post3.likes)
+    expect(page).not_to have_content(@post2.likes)
+    expect(page).not_to have_content(@post1.likes)
+  end
   it 'Shows the Author photo' do
     image = page.all('img')
     expect(image.size).to eq 1
