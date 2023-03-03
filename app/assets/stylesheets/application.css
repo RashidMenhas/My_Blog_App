@@ -134,3 +134,10 @@ a {
 .create-heading {
   margin-top: 10px;
 }
+
+.border {
+  border: 1px solid black;
+  width: 60%;
+  padding: 2rem;
+  border-radius: 8px;
+}
