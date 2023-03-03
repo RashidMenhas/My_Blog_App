@@ -34,14 +34,14 @@ class PostsController < ApplicationController
     flash[:success] = 'Successfully Save...'
   end
 
-  def destroy 
-    post = Post.find(params[:id])   
-    if post.destroy 
+  def destroy
+    post = Post.find(params[:id])
+    if post.destroy
       flash[:success] = 'Post was successfully deleted.'
-    else 
-      flash[:error] = 'Error: Post could not be deleted' 
-    end 
-    redirect_to user_posts_url 
+    else
+      flash[:error] = 'Error: Post could not be deleted'
+    end
+    redirect_to user_posts_url
   end
 
   def new
