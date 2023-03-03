@@ -13,3 +13,131 @@
  *= require_tree .
  *= require_self
  */
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.users-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  gap: 10px;
+}
+
+.user-list {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  list-style: none;
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.user-info {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-inline-start: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.username {
+  margin-left: 10px;
+}
+
+.post-counter {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  height: 100%;
+  margin-right: 10px;
+}
+
+.user-details-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+
+.bio {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.bio-desc {
+  font-size: 15px;
+}
+
+.user-post {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.post-title {
+  margin-left: 10px;
+}
+
+.counter-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  margin-right: 20px;
+}
+
+.post-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.post-comments {
+  margin: 20px;
+  border: 1px solid black;
+}
+
+.create-heading {
+  margin-top: 10px;
+}
+
+.border {
+  border: 1px solid black;
+  width: 50%;
+  padding: 3%;
+  border-radius: 5px;
+}

@@ -1,7 +1,10 @@
 class UsersController < ApplicationController
-  def index; end
+  before_action :authenticate_user!
+  def index
+    @user = User.all.order(:id)
+  end
 
   def show
-    params[:user_id]
+    @user = User.find(params[:id])
   end
 end
