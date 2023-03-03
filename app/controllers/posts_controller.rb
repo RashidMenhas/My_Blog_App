@@ -41,9 +41,9 @@ class PostsController < ApplicationController
     else 
       flash[:error] = 'Error: Post could not be deleted' 
     end 
-      redirect_to user_posts_url 
+    redirect_to user_posts_url 
   end
-  
+
   def new
     @post = Post.new
   end
