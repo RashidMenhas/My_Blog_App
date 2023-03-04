@@ -7,7 +7,7 @@
   </div>
 
   <% @user.recent_three.each do |post| %>
-    <%= link_to user_post_path(@user, post) do %>
+    <%= link_to user_path(@user, post) do %>
       <%= render "posts/post", post: post %>
     <% end %>
   <% end %>
