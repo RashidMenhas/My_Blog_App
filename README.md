@@ -151,6 +151,10 @@ To run the project, execute the following command:
 - LinkedIn: [![ayodeji-abidemi](https://img.shields.io/badge/-AyodejiAbidemi-white?logo=LinkedIn&logoColor=181717&style=plastic)](https://linkedin.com/in/ayodeji-abidemi)
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 674bfdaa50ef34fb70e091d0e3ffc1ea720c1303
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
@@ -193,7 +197,5 @@ I would like to thank... <a href="https://www.microverse.org/?gclid=CjwKCAiArY2f
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

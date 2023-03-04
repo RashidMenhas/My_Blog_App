@@ -12,10 +12,23 @@
   </head>
 
   <body>
+  
   <div class="nav-bar">
-      <%= link_to 'HOME', root_path, class: 'mr-8 btn btn-outline-primary' %>
-      <%= link_to 'BACK', 'javascript:history.back()', class: 'btn btn-outline-primary' %>
-    </div>
+     <%= link_to "HOME", users_path, class: "mr-8" %> 
+     <div class="button-section"> 
+     <% if current_user %> 
+     <h4>Welcome: <%= current_user.name %></h4> 
+     <%= button_to "Sign out", destroy_user_session_path, method: :delete %> 
+     <% else %>
+      <h4 class="quest_user"> Hi, Guest User</h4>
+     <% end %>
+      <%= link_to "BACK", "javascript:history.back()" %> 
+     </div> 
+    </div> 
+    <div class="container"> 
+     <p class="notice"><%= notice %></p> 
+     <p class="alert"><%= alert %></p> 
+    </div> 
     <%= yield %>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
   </body>

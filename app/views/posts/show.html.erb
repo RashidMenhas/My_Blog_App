@@ -1,4 +1,11 @@
 <%= content_for :title, "#{@user.name} | #{@post.title}"%>
+<div class="container">
+  <% if flash[:success] %>
+    <div class="notice"><%= flash[:success] %></div>
+  <%else%>
+    <div class="notice"><%= flash[:error] %></div>
+  <% end %>
+</div>
 <%= render "user_post", post:@post %>
 <div class="post-comments">
   <% @comments.each do |comment| %>
@@ -7,16 +14,21 @@
         <span><strong><%= comment.author.name %>:</strong></span>
         <span><%= comment.text %></span>
       </p>
+      <% if can? :destroy, comment %>
+        <%= button_to "Delete Comment", user_post_comment_path(@user, @post, comment),
+         method: :delete, class: "p-1 chip capitalize text-sm text-white bg-red-500 
+         border hover:text-red-500 hover:border-red-500 hover:bg-transparent", 'data-ripple-light': true %>
+      <% end %>
     </div>
   <% end %>
 </div>
 <div class="container">
-<%= form_with model: @comment, url:post_path, method: :post, scope: :comment do |f|
+  <%= form_with model: @comment, url:post_path, method: :post, scope: :comment do |f|
 %>
-<div class="comment-section">
-<%= f.text_area :text, placeholder: "Add Comment", class:'form-control' %>
-<br/>
-<%= f.submit "Comment", class:'btn btn-primary' %>
-</div>
-</div>
+    <div class="comment-section">
+      <%= f.text_area :text, placeholder: "Add Comment", class:'form-control' %>
+      <br/>
+      <%= f.submit "Comment", class:'btn btn-primary' %>
+    </div>
+  </div>
 <% end %>

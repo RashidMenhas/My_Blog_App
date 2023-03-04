@@ -1,3 +1,11 @@
+<div class="container">
+<% if flash[:success] %>
+  <div class="notice"><%= flash[:success] %></div>
+  <%end%>
+<% if flash[:error]%>
+  <div class="notice"><%= button_to 'Login First', new_user_session_url %></div>
+<% end %>
+</div>
 <div class = "post-container">
     <div class = "container">
   <h1 class="create-heading">Create New Post 
