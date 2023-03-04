@@ -30,7 +30,7 @@ class PostsController < ApplicationController
     @post.comments_counter = 0
 
     if @post.save
-      flash[:success] = 'Successfully Saved'
+      flash[:success] = 'New Post Successfully Created'
     else
       flash[:error] = 'Login'
     end
