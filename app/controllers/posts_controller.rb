@@ -32,10 +32,9 @@ class PostsController < ApplicationController
     if @post.save
       flash[:success] = 'Successfully Saved'
     else
-      flash[:error] ='Login'
+      flash[:error] = 'Login'
     end
     redirect_to posts_new_path
-
   end
 
   def destroy
