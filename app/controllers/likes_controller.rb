@@ -1,13 +1,11 @@
 class LikesController < ApplicationController
-def create 
+  def create
     post = Post.find(params[:post_id])
 
     if like.save
-        flash[:success] = 'Post was liked '
+      flash[:success] = 'Post was liked '
     else
-        redirect_to user_post_url(current_user.id, post.id)
+      redirect_to user_post_url(current_user.id, post.id)
     end
-        
-end
-
+  end
 end
