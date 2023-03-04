@@ -8,11 +8,15 @@
       </div>
       <div class = "post-like-section">
         <%= post.text %>
-        <%= form_with model: @like, url: like_path, method: :post do |f|%>
-        <br/>
-        <div class= "container">
-          <%= f.submit "Like", class: "btn btn-outline-success"%>
-          </div>
+               <% if user_signed_in?  %>
+    <div class="button-section">
+    <%= button_to "Add Like", like_path(@user, @post), class: "button button-text button-pink", 'data-ripple-light': true, method: :post %>
+    <% if can? :destroy, @post %>
+      <%= button_to "Delete Post", user_post_path, method: :delete, class: "m-3 p-1 button-gradient text-lg text-white bg-gray-700 border hover:text-gray-700 hover:border-gray-700 hover:bg-transparent", 'data-ripple-light': true %>
+    <% end %>
+    </div>
+  <% else %>
+  <%= button_to "Add Like", new_user_session_url, class: "bg-red-400", class: "button button-text button-pink", 'data-ripple-light': true, method: :get %>
           <br/>
         <%end%>
       </div>
