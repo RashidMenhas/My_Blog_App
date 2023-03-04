@@ -28,10 +28,14 @@ class PostsController < ApplicationController
     @post.author = current_user
     @post.likes_counter = 0
     @post.comments_counter = 0
-    return unless @post.save
 
+    if @post.save
+      flash[:success] = 'Successfully Saved'
+    else
+      flash[:error] ='Login'
+    end
     redirect_to posts_new_path
-    flash[:success] = 'Successfully Save...'
+
   end
 
   def new
