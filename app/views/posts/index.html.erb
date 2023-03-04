@@ -2,7 +2,7 @@
   <% content_for :title, "#{@user.name}'s Posts"%>
   <%= render "users/user", user:@user%>
   <% @user.posts.each do | post | %>
-    <%= link_to user_post_path(@user, post) do %>
+    <%= link_to user_path(@user, post) do %>
       <%= render "post", post: post %>
       <div class="user-post-comments">
         <h3 class="text-xl">
