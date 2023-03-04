@@ -6,7 +6,6 @@ class CommentsController < ApplicationController
 
     def create
         post =Post.find(params[:id])
-        comment = Comment.create(author: current_user, post:, **comment_params)
 
         if comment.save
             flash[:success] = 'Comment was successfully saved !'
