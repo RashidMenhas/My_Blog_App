@@ -10,10 +10,12 @@ Rails.application.routes.draw do
   get '/posts/new', to: 'posts#new', as: 'create_post'
   post '/posts/new', to: 'posts#create'
   get '/users/:user_id/posts/:id', to: 'posts#show', as: 'post'
-  post '/users/:user_id/posts/:id', to: 'posts#create_comment'
+  post '/users/:user_id/posts/:id', to: 'comments#create'
   post '/users/:user_id/posts/:id/likes', to: 'posts#create_like', as: 'like'
 
   resources :users, only: %i[index show] do
-    resources :posts, only: %i[index show]
+    resources :posts, only: %i[index show, :destroy] do
   end
+end
+
 end
