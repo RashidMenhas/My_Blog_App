@@ -151,7 +151,10 @@ To run the project, execute the following command:
 - LinkedIn: [![ayodeji-abidemi](https://img.shields.io/badge/-AyodejiAbidemi-white?logo=LinkedIn&logoColor=181717&style=plastic)](https://linkedin.com/in/ayodeji-abidemi)
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 674bfdaa50ef34fb70e091d0e3ffc1ea720c1303
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- FUTURE FEATURES -->
