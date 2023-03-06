@@ -17,7 +17,7 @@ Rails.application.routes.draw do
   end
 
 
-   # API routes
+   # API routes for set path
    namespace :api do
     namespace :v1 do
       resources :users do 
