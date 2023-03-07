@@ -136,7 +136,7 @@ a {
 }
 
 .border {
-  border: 1px solid black;
+  border: 1.5px solid black;
   width: 60%;
   padding: 2rem;
   border-radius: 8px;
