@@ -30,9 +30,9 @@ gem 'jbuilder'
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
 
-#API
+# API
 gem 'cancancan'
-#it's for cruds
+# it's for cruds
 gem 'devise'
 
 # Use Kredis to get higher-level data types in Redis [https://github.com/rails/kredis]
