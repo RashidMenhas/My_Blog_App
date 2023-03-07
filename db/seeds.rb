@@ -53,4 +53,6 @@ likes = Like.create([
                       { author_id: 6, post_id: 7 }
                     ])
 
-                    api_key = ApiKey.create # Generate access token for API
+                    # Generate access token for API
+
+                    api_key = ApiKey.create 
