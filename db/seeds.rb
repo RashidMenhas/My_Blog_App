@@ -54,5 +54,4 @@ likes = Like.create([
                     ])
 
                     # Generate access token for API
-
                     api_key = ApiKey.create 
