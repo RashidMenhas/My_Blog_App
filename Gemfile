@@ -60,7 +60,6 @@ group :development, :test do
   gem 'ffi'
   gem 'rails-controller-testing'
   gem 'rspec-rails', '~> 6.0.0'
-  # Use database_cleaner for making Capybara testing
   gem 'database_cleaner'
   gem 'letter_opener'
 end
