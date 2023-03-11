@@ -18,6 +18,5 @@ class Ability
       can :destroy, Comment, author: user
       can :read, :all # user(not admin) can read all the blogs
     end
-    
-end
+  end
 end
