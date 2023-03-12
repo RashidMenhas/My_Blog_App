@@ -69,7 +69,9 @@
 
 - We can add, remove, update and display blogs.
 - It has user authentication.
+- It has also authorization feature.
 - It is well designed.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -106,7 +108,7 @@ Clone this repository to your desired folder:
 ```
  - mkdir my-folder
  - cd my-folder
- - git clone git@github.com:SaboorSohaib/Blog-app.git
+ - git clone git@github.com:RashidMenhas/Blog-app.git
  - cd Blog-app
  - bundle install
  - rails db:create
@@ -118,6 +120,8 @@ Clone this repository to your desired folder:
 To run the project, execute the following command:
 
 - rails server
+     or
+- rails s
 
 ### Run tests
 
@@ -177,7 +181,7 @@ Feel free to check the [issues page](../../issues/).
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project you can fork it.
+If you like this project you can fork it easily.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
