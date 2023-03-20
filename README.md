@@ -71,6 +71,8 @@
 - It has user authentication.
 - It has also authorization feature.
 - It is well designed.
+- It has postgresql database
+
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
