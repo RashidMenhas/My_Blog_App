@@ -2,7 +2,7 @@
 
 <div align="center">
 
-  <h3><b>My Blog App</b></h3>
+  <h2><b>My Blog App</b></h2>
 
 </div>
 
@@ -71,14 +71,15 @@
 - It has user authentication.
 - It has also authorization feature.
 - It is well designed.
-
+- It has postgresql database
+- Add boostrap cdn for designing.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link Comming Soon!]
+- [Live Demo Link Comming Soon.]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
