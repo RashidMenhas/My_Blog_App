@@ -74,7 +74,6 @@
 - It has postgresql database
 - Add boostrap cdn for designing.
 
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
